@@ -11,4 +11,4 @@
 - contact.html
 
 ### reference for icons 
-- <a href="https://macosicons.com/"> 
+- <a href="https://macosicons.com/">macOS icons</a>
