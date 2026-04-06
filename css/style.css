@@ -28,7 +28,7 @@ body {
   overscroll-behavior: none;
 }
 
-/* ── MOBILE (default) ── */
+/* mobile */
 #icons {
   display: flex;
   flex-direction: row;
@@ -45,6 +45,8 @@ body {
   gap: 6px;
   width: 80px;
   text-decoration: none;
+  opacity: 1;
+  transition: opacity 0.15s ease;
 }
 
 .icon img {
@@ -59,11 +61,15 @@ body {
   text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.8);
 }
 
-.icon:hover .icon-img {
-  opacity: 0.8;
+.icon:hover img {
+  opacity: 0.7;
 }
 
-/* anyth */
+.icon:active img {
+    opacity: 0.5;
+}
+
+/* desktop/tablet */
 @media (min-width: 768px) {
   #icons {
     flex-direction: column;
