@@ -13,7 +13,7 @@ body {
 }
 
 #desktop {
-  background-color: white;
+  background-color: rgb(0, 9, 109);
   background-image: url('../designs/favicon-2.png');
   background-size: contain;
   background-position: center;
