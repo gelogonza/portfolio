@@ -13,7 +13,7 @@ body {
 }
 
 #desktop {
-  background-color: rgb(0, 9, 109);
+  background-color: rgb(253, 247, 210);
   background-image: url('../designs/favicon-2.png');
   background-size: contain;
   background-position: center;
@@ -55,7 +55,7 @@ body {
   font-size: 12px;
   color: black;
   text-align: center;
-  text-shadow: 1px 1px 3px rgba(141, 140, 140, 0.8);
+  font-weight:600;
 }
 
 .icon:hover img {
@@ -82,4 +82,113 @@ body {
   .icon {
     width: 72px;
   }
+}
+
+/* mac window styles */
+.window {
+  display: none;
+  position: absolute;
+  top: 10%;
+  left: 25%;
+  width: 620px;
+  height: 480px;
+  flex-direction: column;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 25px 60px rgba(0, 0, 0, 0.5);
+  z-index: 100;
+}
+
+#opening-about:checked ~ .window#window-about         { display: flex; }
+#opening-experience:checked ~ .window#window-experience { display: flex; }
+#opening-projects:checked ~ .window#window-projects   { display: flex; }
+#opening-designs:checked ~ .window#window-designs     { display: flex; }
+#opening-contact:checked ~ .window#window-contact     { display: flex; }
+
+.window-bar {
+  display: flex;
+  align-items: center;
+  padding: 10px 16px;
+  background: rgba(10, 10, 10, 0.5);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  user-select: none;
+  flex-shrink: 0;
+}
+
+.window-title {
+  flex: 1;
+  text-align: center;
+  font-size: 13px;
+  font-weight: 500;
+  color: white;
+}
+
+.traffic-lights {
+  display: flex;
+  gap: 6px;
+}
+
+.btn {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  display: inline-block;
+  cursor: default;
+}
+
+.btn.close    { background: #ff5f57; cursor: pointer; }
+.btn.minimize { background: #febc2e; }
+.btn.maximize { background: #28c840; }
+
+.btn.close:hover { background: #bf3a35; }
+
+.window-body {
+  flex: 1;
+  overflow-y: auto;
+  padding: 24px 24px 24px 72px;
+  background-color: white;
+  font-size: 14px;
+  line-height: 1.5;
+  
+}
+
+.window-body h1 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 4px;
+  line-height: 1.5;
+}
+
+.window-body h2 {
+  font-size: 16px;
+  font-weight: 500;
+  margin: 16px 0 4px;
+}
+
+.window-body p {
+  margin-bottom: 8px;
+}
+
+.window-body ul {
+  padding-left: 20px;
+  margin-bottom: 8px;
+}
+
+.window-body li {
+  margin-bottom: 2px;
+  list-style-type: "";
+}
+
+.window-body span {
+  font-weight: bold;
+  color: #ac0202;
+}
+
+.hero-school {
+  font-size: 13px;
+  color: #666;
+  margin-bottom: 4px;
+  font-weight: bold;
 }
