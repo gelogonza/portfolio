@@ -8,6 +8,16 @@
         <link rel="stylesheet" href="css/style.css" />
     </head>
     <body>
+        <header id="waybar">
+            <div id="waybar-left">GeloOS</div>
+            <div id="waybar-center">
+                <span id="clock"></span>
+            </div>
+            <div id="waybar-right">
+                <span>wifi</span>
+                <span>100%</span>
+            </div>
+        </header>
         <main id="desktop">
             <input type="checkbox" id="opening-about" hidden />
             <input type="checkbox" id="opening-experience" hidden />
@@ -17,7 +27,7 @@
             <nav id="icons">
                 <label for="opening-about" class="icon">
                     <img
-                        src="icons/angelo.jpeg"
+                        src="icons/angelo.png"
                         width="60"
                         height="60"
                         alt="image of angelo" />
@@ -25,7 +35,7 @@
                 </label>
                 <label for="opening-experience" class="icon">
                     <img
-                        src="icons/folder-icon.png"
+                        src="icons/Experience.png"
                         width="48"
                         height="48"
                         alt="experience folder" />
@@ -137,10 +147,8 @@
                     <ul>
                         <li>Python</li>
                         <li>Java</li>
-                        <li>React.js</li>
                         <li>JavaScript</li>
                         <li>SQL</li>
-                        <li>Next.js</li>
                     </ul>
                     <p>Outside of school, I lift and run. I also like to code
                         and build projects on my own time. I'm also
@@ -150,6 +158,229 @@
                         ideas and use them in development.</p>
                 </section>
             </article>
+            <article class="window" id="window-experience">
+                <header class="window-bar">
+                    <div class="traffic-lights">
+                        <label for="opening-experience"
+                            class="btn close"></label>
+                        <span class="btn minimize"></span>
+                        <span class="btn maximize"></span>
+                    </div>
+                    <span class="window-title">experience</span>
+                </header>
+                <section class="window-body">
+                    <h1>Experience</h1>
+                    <p class="role-heading">Undergraduate Research Assistant</p>
+                    <p class="role-company">Indiana University Bloomington</p>
+                    <p class="role-location"> Bloomington, IN</p>
+                    <p class="role-date"> September 2025 - December 2025</p>
+                    <ul>
+                        <li>Building and configuring Nvidia Jetson embedded GPU
+                            platforms with CUDA for portable nanopore
+                            sequencing; optimizing workflows with MinKNOW and
+                            Dorado on Linux</li>
+                        <li>Processing ONT datasets using Guppy, minimap2,
+                            Medaka, performing basecalling, alignment,
+                            methylation, and
+                            variant calling</li>
+                        <li>Helped train Machine Learning models with HIV
+                            mutation datasets, making a teacher/student model
+                            where we can
+                            rank medicines on a score-based system</li>
+                    </ul>
+                    <p class="role-heading">Freelance Software Engineer</p>
+                    <p class="role-company">F Perez Concrete</p>
+                    <p class="role-location">Remote</p>
+                    <p class="role-date"> July 2025 - September 2025</p>
+                    <ul>
+                        <li>Built and deployed a Next.js full-stack web app with
+                            40% faster load times and a Mapbox-powered quote
+                            calculator, cutting manual prep time by 50%</li>
+                        <li>Engineered a secure admin dashboard with JWT
+                            authentication, REST APIs, file uploads, and revenue
+                            tracking,
+                            saving 5-10 hrs/week.</li>
+                        <li>Integrated Google Analytics API to track visitor
+                            behavior and conversions, providing actionable
+                            insights to increase
+                            site traffic, SEO, and lead quality</li>
+                    </ul>
+                    <p class="role-heading">Software Engineer Intern</p>
+                    <p class="role-company">Infosys</p>
+                    <p class="role-location">Indianapolis, IN</p>
+                    <p class="role-date"> June 2025 - August 2025</p>
+                    <ul>
+                        <li>Engineered an automated PII detection and redaction
+                            system for PDF documents in Python, ensuring data
+                            privacy compliance and reducing manual review
+                            workload by 70%</li>
+                        <li>Implemented a regex and token-based algorithm to
+                            identify and redact sensitive data (e.g., SSNs, bank
+                            accounts,
+                            credit info), producing timestamped redacted PDFs
+                            with audit-ready reports</li>
+                        <li>Designed a dual-mode PDF pipeline supporting
+                            text-based and scanned files by integrating Google
+                            Document
+                            AI OCR for high-accuracy extraction</li>
+                    </ul>
+                </section>
+            </article>
+            <article class="window" id="window-projects">
+                <header class="window-bar">
+                    <div class="traffic-lights">
+                        <label for="opening-projects" class="btn close"></label>
+                        <span class="btn minimize"></span>
+                        <span class="btn maximize"></span>
+                    </div>
+                    <span class="window-title">Projects</span>
+                </header>
+                <section class="window-body">
+                    <h1>My Projects</h1>
+                    <div class="project-card">
+                        <h3>Portfolio v2</h3>
+                        <div class="tags">
+                            <span>React</span>
+                            <span>TypeScript</span>
+                            <span>Tailwind CSS</span>
+                            <span>GSAP</span>
+                        </div>
+                        <p>Modern, responsive portfolio website built with React, TypeScript, and Tailwind CSS. Features smooth animations, glass-morphism effects, and a professional dark theme design.</p>
+                        <div class="project-links">
+                            <a href="https://portfoliov2-nine-theta.vercel.app/" target="_blank" rel="noreferrer">Demo</a>
+                            <a href="https://github.com/gelogonza/portfoliov2" target="_blank" rel="noreferrer">Github</a>
+                        </div>
+                    </div>
+                    <div class="project-card">
+                        <h3>Portfolio v1</h3>
+                        <div class="tags">
+                            <span>React</span>
+                            <span>Next.js</span>
+                            <span>Tailwind CSS</span>
+                        </div>
+                        <p>First iteration of my personal portfolio, showcasing my skills and projects. Using a blue color scheme. inspired by Brittany Chiang's old portfolio</p>
+                        <div class="project-links">
+                            <a href="https://gelo-two.vercel.app/" target="_blank" rel="noreferrer">Demo</a>
+                            <a href="https://github.com/gelogonza/geloportv2" target="_blank" rel="noreferrer">Github</a>
+                        </div>
+                    </div>
+                    <div class="project-card">
+                        <h3>Link Website</h3>
+                        <div class="tags">
+                            <span>HTML</span>
+                            <span>css</span>
+                        </div>
+                        <p>Incredibly simple linktree type clone, that leads to my other projects and social media accounts.</p>
+                        <div class="project-links">
+                            <a href="https://gelo-link.netlify.app/" target="_blank" rel="noreferrer">Demo</a>
+                            <a href="https://github.com/gelogonza/AngeloLink" target="_blank" rel="noreferrer">Github</a>
+                        </div>
+                    </div>
+                    <div class="project-card">
+                        <h3>Syro</h3>
+                        <div class="tags">
+                            <span>Typescript</span>
+                            <span>Next.js</span>
+                            <span>Spotify API</span>
+                            <span>Tailwind</span>
+                        </div>
+                        <p>Designed and developed a Music app using Spotify API that allows users to access playlists, view data, control playback on their devices, play their music from playlists, play music that is downloaded locally. This is still in progress and being worked on currently.</p>
+                        <div class="project-links">
+                            <a href="https://syro-app.vercel.app/" target="_blank" rel="noreferrer">Demo</a>
+                            <a href="https://github.com/gelogonza/SyroApp" target="_blank" rel="noreferrer">Github</a>
+                        </div>
+                    </div>
+                    <div class="project-card">
+                        <h3>Reservation System</h3>
+                        <div class="tags">
+                            <span>C++</span>
+                        </div>
+                        <p>Console-based application designed to streamline the operations of a restaurant. The program allows users to manage reservations, food orders, table assignments, bill payments, and closing operations in an efficient and user-friendly manner.</p>
+                        <div class="project-links">
+                            <a href="https://github.com/gelogonza/simplersvp" target="_blank" rel="noreferrer">Github</a>
+                        </div>
+                    </div>
+                    <div class="project-card">
+                        <h3>CLI Fitness Tracker</h3>
+                        <div class="tags">
+                            <span>C++</span>
+                        </div>
+                        <p>Console-based application designed to help users log physical activities, set fitness goals, and track their progress. It provides a simple interface to input data, monitor goals, and generate progress reports.</p>
+                        <div class="project-links">
+                            <a href="https://github.com/gelogonza/FitnessTracker" target="_blank" rel="noreferrer">Github</a>
+                        </div>
+                    </div>
+                     <div class="project-card">
+                        <h3>Bill's Breakfast</h3>
+                        <div class="tags">
+                            <span>Python</span>
+                            <span>HTML/CSS</span>
+                            <span>Bootstrap</span>
+                            <span>Flask</span>
+                            <span>Jinja</span>
+                            <span>MariaDB</span>
+                        </div>
+                        <p>Breakfast ordering website. Allows for adding customers, new items to the order, phone number, email, name, and the ability to update. Also gets orders added to database and updates them on the site. Implemented templating for several pages to have a coherent and sleek layout across all pages.</p>
+                        <div class="project-links">
+                            <a href="#" target="_blank" rel="noreferrer">Demo</a>
+                            <a href="#" target="_blank" rel="noreferrer">Github</a>
+                        </div>
+                        <div class="project-card">
+                        <h3>MovieRecs</h3>
+                        <div class="tags">
+                            <span>HTML/CSS</span>
+                            <span>JavaScript</span>
+                            <span>Node.js</span>
+                            <span>Express</span>
+                            <span>Jest</span>
+                            <span>TMDB API</span>
+                        </div>
+                        <p>A mood-based movie recommendation web app. You pick how you are feeling, pick a genre, and get a personalised list of 10 movies to watch. Local storage used for caching and saving watchlist and watched to browser.</p>
+                        <div class="project-links">
+                            <a href="https://movie-app-nu-hazel.vercel.app/" target="_blank" rel="noreferrer">Demo</a>
+                            <a href="https://github.com/gelogonza/movie-app" target="_blank" rel="noreferrer">Github</a>
+                        </div>
+                    </div>
+                    </div>
+                </section>
+            </article>
+            <article class="window" id="window-designs">
+                <header class="window-bar">
+                    <div class="traffic-lights">
+                        <label for="opening-designs" class="btn close"></label>
+                        <span class="btn minimize"></span>
+                        <span class="btn maximize"></span>
+                    </div>
+                    <span class="window-title">Designs</span>
+                </header>
+                <section class="window-body">
+                    <h1>design gallery</h1>
+                    <div class="gallery">
+                        <img src="designs/digital.jpg">
+                        <img src="designs/diorama-chicken-bed.png">
+                        <img src="designs/diorama-chicken-room-tv.png">
+                        <img src="designs/diorama-chicken-room.png">
+                        <img src="designs/diorama2nd.png">
+                        <img src="designs/diorama3rd-pov-1.png">
+                        <img src="designs/diorama50.png">
+                        <img src="designs/favicon-2.png">
+                        <img src="designs/folk-gif.gif">
+                        <img src="designs/frenchpress.gif">
+                        <img src="designs/gaussian.jpg">
+                        <img src="designs/halftone-vamp.jpg">
+                        <img src="designs/hand-heatmap-surreal.png">
+                        <img src="designs/heatmap-3.png">
+                        <img src="designs/heatmap-4.png">
+                        <img src="designs/heatmap-space.png">
+                        <img src="designs/pixelart-fruit.png">
+                        <img src="designs/self-portrait.png">
+                        <img src="designs/still-life-pixel.png">
+                        <img src="designs/svankmajer-animation.gif">
+                        <img src="designs/vamp-hands.jpg">
+                        <img src="designs/way-of-seeing.png">
+                        <img src="designs/word art.png">
+                    </div>
+                </section>
         </main>
     </body>
 </html>
