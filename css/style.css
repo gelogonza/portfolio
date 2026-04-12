@@ -13,13 +13,13 @@ body {
 }
 
 #desktop {
-  background-color: rgb(253, 247, 210);
-  background-image: url('../designs/favicon-2.png');
-  background-size: contain;
+  background-color: rgb(250, 250, 245);
+  background-image: url('../assets/sky-background.png');
+  background-size:cover;
   background-position: center;
   background-repeat: no-repeat;
   width: 100%;
-  height: 100vh;
+  min-height: 100vh;
   position: relative;
   overflow: hidden;
   overscroll-behavior: none;
