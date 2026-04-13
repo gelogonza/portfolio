@@ -12,3 +12,4 @@
 
 ### reference for icons 
 - <a href="https://macosicons.com/">macOS icons</a>
+- <a href="https://www.youtube.com/watch?v=5tC46h022YE">JavaScript Clock</a>
