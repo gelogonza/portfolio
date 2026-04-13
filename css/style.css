@@ -21,20 +21,31 @@ body {
   background-repeat: no-repeat;
   width: 100%;
   min-height: 100vh;
-  padding-top: 48rem;
   position: relative;
   overflow: hidden;
   overscroll-behavior: none;
 }
 
 #waybar {
-  background-color: navy;
-  color: rgb(251, 251, 251);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 28px;
+  background: rgba(0, 0, 0, 0.5);
+  color: rgb(255, 255, 255);
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 1rem;
-  z-index: 200;
+  padding: 0 16px;
+  font-size: 12px;
+  z-index: 9999;
+}
+
+#waybar-center span {
+  font-weight: 600;
+  font-size: 16px;
+  color: #fafafa;
 }
 
 /* mobile */
@@ -43,6 +54,7 @@ body {
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
+  align-content: flex-start;
   gap: 24px;
   padding: 40px 20px;
 }
@@ -72,6 +84,7 @@ body {
 
 .icon:hover img {
   opacity: 0.7;
+  cursor: pointer;
 }
 
 .icon:active img {
@@ -84,6 +97,7 @@ body {
     flex-direction: column;
     flex-wrap: nowrap;
     justify-content: flex-start;
+    align-content: flex-start;
     gap: 8px;
     padding: 16px;
     position: absolute;
@@ -96,7 +110,7 @@ body {
   }
 }
 
-/* mac window styles */
+/* window styles */
 .window {
   display: none;
   position: absolute;
@@ -163,6 +177,8 @@ body {
   background-color: white;
   font-size: 14px;
   line-height: 1.5;
+  background: rgba(20, 20, 35, 0.72);
+  color: white;
   
 }
 
@@ -171,12 +187,14 @@ body {
   font-weight: bold;
   margin-bottom: 4px;
   line-height: 1.5;
+  text-align: center;
 }
 
 .window-body h2 {
   font-size: 16px;
   font-weight: 500;
   margin: 16px 0 4px;
+  text-align: center;
 }
 
 .window-body p {
@@ -195,12 +213,114 @@ body {
 
 .window-body span {
   font-weight: bold;
-  color: #ac0202;
+  color: #00f2ff;
 }
 
 .hero-school {
   font-size: 13px;
-  color: #666;
+  color: #ffffff;
   margin-bottom: 4px;
   font-weight: bold;
+}
+.window {
+  position: absolute;
+}
+
+.window.maximized {
+   top: 0 !important;
+    left: 0 !important;
+    width: 100vw !important;
+    height: 100vh !important;
+    border-radius: 0 !important;
+}
+
+.resize {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 16px;
+  height: 16px;
+  cursor: nwse-resize;
+}
+
+.window#window-about .window-body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.window#window-about img {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  width: 25%;
+  height: auto;
+  border-radius: 50%;
+  border: 2px solid #00f2ff;
+}
+
+
+
+/* design window */
+.window#window-designs .window-body {
+  background-color: transparent;
+}
+.gallery {
+  columns: 3;
+  column-gap: 12px;
+  padding: 16px;
+}
+
+.gallery img {
+  background-color: white;
+  width: 100%;
+  display: block;
+  margin-bottom: 12px;
+  padding: 5% 5% 15% 5%;
+  border: 1px solid rgb(176, 175, 175);
+
+}
+.gallery img:hover {
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+/* FORM */
+.form-container form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-top: 2rem;
+  justify-content: center;
+}
+
+.form-input {
+  width: 100%;
+  padding: 10px 12px;
+  margin: 8px;
+  border: 1px solid #00f2ff;
+  border-radius: 8px;
+  background: transparent;
+  color: #00f2ff;
+}
+
+.form-input:focus {
+  border-color: white;
+}
+
+textarea.form-input {
+  resize: none;
+  height: 7rem;
+}
+
+button[type="submit"] {
+  margin: 10px;
+  padding: 10px 24px;
+  background: transparent;
+  color:#00f2ff;
+  border: 2px solid #00f2ff;
+  border-radius: 16px;
+  cursor: pointer;
+}
+
+button[type="submit"]:hover {
+  background: #00f2ff;
+  color: black;
 }
