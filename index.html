@@ -11,7 +11,13 @@
         <header id="waybar">
             <div id="waybar-left">GeloOS</div>
             <div id="waybar-center">
-                <span id="clock"></span>
+                <span id="clock">
+                    <span id="hrs">00</span>
+                    <span>:</span>
+                    <span id="min">00</span>
+                    <span>:</span>
+                    <span id="sec">00</span>
+                </span>
             </div>
             <div id="waybar-right">
                 <span>wifi</span>
@@ -93,14 +99,14 @@
                         alt="angelo's linkedin profile" />
                     <span class="icon-label">linkedin</span>
                 </a>
-                <a href="pages/contact.html" class="icon">
+                <label for="opening-contact" class="icon">
                     <img
                         src="icons/contact.png"
                         width="48"
                         height="48"
                         alt="getting in contact with angelo" />
                     <span class="icon-label">contact</span>
-                </a>
+                </label>
                 <a
                     href="https://open.spotify.com/user/6orsc468zs7lp466a1x726uf9?si=3ee6633906bc42c5"
                     target="_blank"
@@ -114,6 +120,7 @@
                     <span class="icon-label">spotify</span>
                 </a>
             </nav>
+            
             <article class="window" id="window-about">
                 <header class="window-bar">
                     <div class="traffic-lights">
@@ -125,12 +132,14 @@
                 </header>
                 <section class="window-body">
                     <h1>Hello, I'm Angelo</h1>
-                    <p class="hero-school">Informatics @ IU Bloomington</p>
+                    <img src="assets/angelo.jpeg" alt="image of angelo gonzalez">
+                    
                     <p class="hero-role">
                         <span>Software Engineer</span>
                         <span>Web Developer</span>
                         <span>Creative Technologist</span>
                     </p>
+                    <p class="hero-school">Informatics @ IU Bloomington</p>
                     <p>I am currently an Informatics Student at <span>IU
                             Bloomington</span>, where I have gained experience
                         in software development, design, and web development.
@@ -158,6 +167,7 @@
                         ideas and use them in development.</p>
                 </section>
             </article>
+
             <article class="window" id="window-experience">
                 <header class="window-bar">
                     <div class="traffic-lights">
@@ -325,6 +335,7 @@
                             <a href="#" target="_blank" rel="noreferrer">Demo</a>
                             <a href="#" target="_blank" rel="noreferrer">Github</a>
                         </div>
+                     </div>
                         <div class="project-card">
                         <h3>MovieRecs</h3>
                         <div class="tags">
@@ -363,6 +374,7 @@
                         <img src="designs/diorama2nd.png">
                         <img src="designs/diorama3rd-pov-1.png">
                         <img src="designs/diorama50.png">
+                        <img src="designs/office.png">
                         <img src="designs/favicon-2.png">
                         <img src="designs/folk-gif.gif">
                         <img src="designs/frenchpress.gif">
@@ -381,6 +393,31 @@
                         <img src="designs/word art.png">
                     </div>
                 </section>
+                <div class="resize"></div>
+            </article>
+            <article class="window" id="window-contact">
+                <header class="window-bar">
+                    <div class="traffic-lights">
+                        <label for="opening-contact" class="btn close"></label>
+                        <span class="btn minimize"></span>
+                        <span class="btn maximize"></span>
+                    </div>
+                    <span class="window-title">Contact</span>
+                </header>
+                <section class="window-body">
+                    <h1>Get in touch!</h1>
+                    <div class="form-container">
+                        <form action="https://formspree.io/f/mbdqrbba" method="POST">
+                            <input type="text" name="name" placeholder="Your Name" class="form-input" required>
+                            <input type="email" name="email" placeholder="Your Email" class="form-input" required>
+                            <textarea rows="5" cols="60" name="message" placeholder="Your message" class="form-input" required></textarea>
+                            <button type="submit">Submit</button>
+                        </form>
+                    </div>
+                </section>
+                <div class="resize"></div>
+            </article>
         </main>
+        <script src="script.js"></script>
     </body>
 </html>
