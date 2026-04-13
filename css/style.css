@@ -103,6 +103,7 @@ body {
     position: absolute;
     top: 16px;
     left: 16px;
+    padding-top:4rem;
   }
 
   .icon {
